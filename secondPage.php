@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION['prenom'] = $_POST['prenom'];
-$_SESSION['age'] = $_POST['age'];
+$_SESSION['prenom'] = isset($_POST['prenom']) ? $_POST['prenom'] : NULL;
+$_SESSION['age'] = isset($_POST['age']) ? $_POST['age'] : NULL;
 ?>
 
 <!DOCTYPE html>
